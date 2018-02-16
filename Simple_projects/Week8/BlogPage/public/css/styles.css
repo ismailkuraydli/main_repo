@@ -1,0 +1,268 @@
+
+body {
+    background:#afc2cb !important; 
+}
+#app {
+    background: #afc2cb;
+}
+
+.openbook {
+    background: #e1f5fe !important;
+    height:80px;
+}
+
+.logo-ob {
+    font-size: 30pt !important;
+    margin: 13px 0px;
+}
+
+.dropdown-ob {
+    font-size: 20pt !important;
+    margin: 13px 0px;
+    text-align: center;
+}
+
+.welcome-link {
+    font-size: 15pt !important;
+    margin: 13px 0px;
+    text-align: center;
+}
+
+#welcome-body {
+    background: #e1f5fe !important;
+}
+
+.page-title {
+    font-size: 25pt !important;
+    margin: 10px 0px !important;
+    
+}
+
+.page-title > h1 {
+    width: fit-content; 
+    height: 60px;   
+    opacity: 0.7;
+    font-weight: bolder !important;
+    border-bottom: 2px solid #e1f5fe  !important;
+}
+
+.div-blog {
+    min-height: 200px;
+    border:2px solid #9da6a9 !important;
+    background: #ffffff !important;
+    margin: 20px 0px !important;
+    padding: 20px 20px !important;
+}
+
+.div-post {
+    height: flex;
+    border:2px solid #9da6a9 !important;
+    background: #ffffff !important;
+    margin: 20px 0px !important;
+    padding: 20px 20px !important;
+}
+
+.post-title {
+    width: 600px !important;;
+    margin: 30px 50px;
+}
+
+.post-body {
+    margin: 40px 30px;
+    font-size: 15pt !important;
+}
+.image-post {
+    height: 480px;
+    width: 640px;
+    margin: 0px 30px !important;
+    z-index: 1;
+    position: relative;
+    border-radius: 1px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);   
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.post-footer {
+    margin: 0px 40px 0px 590px;
+    padding: 30px 0px 0px 0px;
+    height: 60px;
+}
+
+.svg-icon {
+    margin: 0px 10px;
+}
+
+.blog-title {
+    float: left;
+    width: 400px !important;
+}
+.blog-description {
+    width: 50%;
+    overflow-x: auto !important;
+}
+.link-blog {
+    
+    text-decoration: none !important;
+    color: #000;
+}
+
+.link-post {
+    text-decoration: none !important;
+    color: #000;
+}
+
+.link-blog > h2 {
+    width: 50% !important;
+}
+.delete-blog {
+    float: right;
+    margin: 25px 20px;
+}
+.panel-body {
+    padding:0px 0px !important;
+    
+}
+
+.panel-blog {
+    background: #afc2cb !important;
+    border: none !important;
+}
+
+.panel-heading {
+    background: #afc2cb !important;
+    border: none !important;
+    font-size: 20pt;
+}
+
+.paper-material {
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);   
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.paper-material:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.input-text {
+    height: 50px !important;
+    width: 300px !important;
+    margin: 10px 30px !important;
+    font-size: 13pt !important;
+}
+.input-textarea {
+    height: 300px;
+    width: 500px;
+    margin: 10px 30px;
+    font-size: 13pt;
+}
+.input-text-label {
+    font-size: 15pt;
+}
+
+.input-textarea-label {
+    font-size: 15pt;
+}
+.form-create {
+    border: 0px !important;
+    
+}
+
+.form-button {
+    font-size: 15pt;
+    background: #ced7db;
+    width: 150px;
+    height: 75px;
+    margin: 20px 0px 0px 380px;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);   
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.form-button:hover,
+.form-button:focus {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.login-body {
+    margin: 50px 0px;
+}
+
+.login-button {
+    margin: 20px 0px 0px 30px;
+}
+.reset-pass-button {
+    margin: 20px 500px 0px 30px;
+    width: 300px !important;
+    height:50px !important;
+}
+.btn-forgot-pass {
+    color: #fff !important;
+    font-size: 15pt !important;
+    text-decoration: none !important;
+}
+
+.regular-checkbox {
+    background-color: #fafafa;
+    border: 1px solid #caceca;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding:80px !important;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox:active, .regular-checkbox:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+.pagination-post  {
+    margin: 0 auto !important;
+    width: 600px;
+}
+
+.pagination-post > ul {
+    margin: 0 170px !important;
+}
+.pagination-post > ul > li > span{
+    font-size: 20pt !important;
+}
+
+.pagination-post > ul > li > a{
+    font-size: 20pt !important;
+}
+
+.input-comment {
+    width: 630px !important;
+    height: 100px !important;
+}
+
+.button-comment {
+    width: 200px !important;
+    margin: 20px 0px 0px 460px !important;
+}
+.comment-box {
+    min-height:50px;
+    width: 100%;
+    margin-top: 5px;
+    border-top: 1px solid #afc2cb;
+}
+
+.error-codes {
+    font-size: 20pt !important;
+}

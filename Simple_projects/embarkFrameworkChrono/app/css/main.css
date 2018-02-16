@@ -1,0 +1,538 @@
+
+
+div {
+  margin: 15px;
+}
+
+.tab-content {
+  padding: 10px;
+  margin: 0px;
+}
+
+.nav-tabs {
+  margin-bottom: 0;
+}
+
+.active {
+  border: none!important;
+}
+
+.chrono-tabs > li {
+  border: none;
+}
+.borderBlack {
+  border: 3px solid #000;
+  background: #fff;
+}
+
+#logo-section {
+  height: 450px;
+}
+
+#box-create-section {
+  min-height: 700px;
+  padding: 0px;
+}
+#add-keeper-section {
+  min-height: 300px;
+}
+
+#open-box-section {
+  min-height: 500px;
+}
+#navbar {
+  background: #000;
+  min-height:50px;
+  width: 100%;
+}
+
+#navbar > div > a {
+  float: right;
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  visibility: visible;
+  text-align: center;
+  margin: 20px 20px;
+}
+#home-link {
+  font-size: 25pt !important;
+  margin-right: 300px !important;
+}
+#section-1 {
+  background: #fff;
+  min-height:100%;
+  width: 100%;
+}
+
+#section-2 {
+  background: #000;
+  min-height:1200px;
+  width: 100%;
+}
+
+#section-3 {
+  background: #fff;
+  min-height: 500px;
+  width: 100%;
+}
+
+#section-4 {
+  min-height:1000px;
+  width: 100%;
+  background: #000;
+}
+
+
+/* ---------------------------------------------- */
+
+
+
+.button-wrapper {
+  margin-top: 50px;
+}
+
+.svg-wrapper {
+  height: 60px;
+    margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #000;
+}
+
+.shape-white {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #fff;
+}
+
+.text {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -65px;
+  visibility: visible;
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -65px;
+  visibility: visible;
+  text-align: center;
+}
+
+.text-style {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  visibility: visible;
+  text-align: center;
+}
+
+.text-style-white {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  visibility: visible;
+  text-align: center;
+}
+
+.title-style-white {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 55px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  visibility: visible;
+  text-align: center;
+}
+
+.title-style {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 50pt;
+  visibility: visible;
+  text-align: center;
+}
+
+.title-style-h2 {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 30pt;
+  visibility: visible;
+  text-align: center;
+}
+.title-style-h2-white {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  text-decoration: none;  
+  font-size: 30pt;
+  visibility: visible;
+  text-align: center;
+}
+.separator {
+  border-top: 2px solid #000;
+}
+@keyframes logo-alter {
+  0% { 
+    opacity : 1;
+   }
+  50% {
+    opacity :0.8; 
+  }
+  100% {
+    opacity : 1;
+  }
+}
+.circle-shape {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(circle at center, rgba(255,255,255,1) 5%, rgba(190, 41, 236,0.90)100%);
+  background: -o-radial-gradient(circle at center, rgba(255,255,255,1) 5%,  rgba(190, 41, 236,0.90)100%);
+  background: radial-gradient(circle at center, rgba(255,255,255,1) 5%, rgba(190, 41, 236,0.90)100%);
+  -webkit-animation: logo-alter-edge 10s infinite alternate;
+  -moz-animation: logo-alter-edge 10s infinite alternate;
+  -ms-zoom-animation: logo-alter-edge 10s infinite alternate;
+  -o-animation: logo-alter-edge 10s infinite alternate;
+  animation: logo-alter-edge 10s infinite alternate;
+}
+@keyframes logo-alter-edge {
+  0% { 
+    opacity: 0;
+   }
+   50% {
+     opacity: 0.2;
+   }
+  100% {
+    opacit: 0.6;
+  }
+}
+.input-tron {
+  margin-top: 15px;
+}
+.cls-2 {
+  -webkit-animation: logo-circles 5s infinite alternate;
+  -moz-animation: logo-circles 5s infinite alternate;
+  -ms-zoom-animation: logo-circles 5s infinite alternate;
+  -o-animation: logo-circles 5s infinite alternate;
+  animation: logo-circles 5s infinite alternate;
+}
+.cls-2:hover {
+  -webkit-animation: logo-circles 0.5s infinite alternate;
+  -moz-animation: logo-circles 0.5s infinite alternate;
+  -ms-zoom-animation: logo-circles 0.5s infinite alternate;
+  -o-animation: logo-circles 0.5s infinite alternate;
+  animation: logo-circles 0.5s infinite alternate;
+}
+.cls-1 {
+  fill: none;
+  stroke:#000;
+}
+
+.straight-line {
+  fill: #fff;
+  stroke:#000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+  -webkit-animation: fade-in-svg 15s infinite alternate;
+  -moz-animation: fade-in-svg 15s infinite alternate;
+  -ms-zoom-animation: fade-in-svg 15s infinite alternate;
+  -o-animation: fade-in-svg 15s infinite alternate;
+  animation: fade-in-svg 15s infinite alternate;
+}
+
+.reverse-line {
+  -webkit-animation: fade-in-svg 15s infinite alternate;
+  -moz-animation: fade-in-svg 15s infinite alternate;
+  -ms-zoom-animation: fade-in-svg 15s infinite alternate;
+  -o-animation: fade-in-svg 15s infinite alternate;
+  animation: fade-in-svg 15s infinite alternate;
+  fill: #fff;
+  stroke:#000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+}
+
+.cls-1:hover {
+  -webkit-animation: fade-in-svg 1s infinite alternate;
+  -moz-animation: fade-in-svg 1s infinite alternate;
+  -ms-zoom-animation: fade-in-svg 1s infinite alternate;
+  -o-animation: fade-in-svg 1s infinite alternate;
+  animation: fade-in-svg 1s infinite alternate;
+}
+
+.back-logo {
+  opacity: 0.3;
+}
+
+@keyframes logo-circles {
+  0% {
+    stroke-width: 0px;
+  }
+  50% {
+    stroke: #fff;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-width:  0px;
+  }
+}
+
+@keyframes fade-in-svg {
+  0% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+  }
+  25% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 500;
+    stroke-width: 4px;
+  }
+  100% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  
+}
+
+@keyframes fade-in-svg-reverse {
+  0% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+  }
+  25% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 500;
+    stroke-width: 2px;
+  }
+  100% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  
+}
+
+.button-tron{
+  text-decoration: none;
+  visibility: hidden;
+  margin-bottom: 20px;
+}
+#upload {
+  margin-left: 40px;
+}
+#seal {
+  margin-left: 65px;
+}
+#apply-keeper {
+  margin-left:92px;
+}
+#unlock-box {
+  margin-left: 80px;
+}
+#submitkey {
+  margin-left: 80px;
+}
+
+input {
+  margin-top: 30px;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes draw-title {
+  0% {
+    stroke-dasharray: 500 500;
+    stroke-dashoffset: 1000;
+    stroke-width: 1px;
+  }
+  25% {
+      stroke-dasharray: 0 500;
+      stroke-dashoffset: 1000;
+      stroke-width: 8px;
+  }
+  50% {
+      stroke-dasharray: 500 500;
+      stroke-dashoffset: 1000;
+      stroke-width: 1px;
+  }
+  75% {
+      stroke-dasharray: 00 500;
+      stroke-dashoffset: 1000;
+      stroke-width: 8px;
+  }
+  100% {
+      stroke-dasharray: 500 500;
+      stroke-dashoffset: 1000;
+      stroke-width: 1px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.svg-wrapper:hover .shape-white {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.button-tron:disabled > div {
+  opacity: 0.5 !important;
+}
+
+.shape-disabled {
+  stroke-dasharray: none;
+  /* fix this for extra */
+}
+
+#loading {
+  height: 25%;
+  width: 25%;
+  position: fixed;
+  left:36%;
+  top:35%;
+  z-index: 9999;
+  opacity: 1 !important;
+  /* display: none; */
+}
+
+.straight-line-loading {
+  fill: #fff;
+  stroke:#fff;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+  opacity: 1 !important;
+  -webkit-animation: fade-in-svg-loading 3s infinite alternate;
+  -moz-animation: fade-in-svg-loading 3s infinite alternate;
+  -ms-zoom-animation: fade-in-svg-loading 3s infinite alternate;
+  -o-animation: fade-in-svg-loading 3s infinite alternate;
+  animation: fade-in-svg-loading 3s infinite alternate;
+}
+
+.reverse-line-loading {
+  -webkit-animation: fade-in-svg-reverse-loading 3s infinite alternate;
+  -moz-animation: fade-in-svg-reverse-loading 3s infinite alternate;
+  -ms-zoom-animation: fade-in-svg-reverse-loading 3s infinite alternate;
+  -o-animation: fade-in-svg-reverse-loading 3s infinite alternate;
+  animation: fade-in-svg-reverse-loading 3s infinite alternate;
+  opacity: 1 !important;
+  fill: #000;
+  stroke:#000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+}
+
+@keyframes fade-in-svg-loading {
+  0% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+  }
+  50% {
+    fill: #000;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 500;
+    stroke-width: 2px;
+  }
+  100% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  
+}
+
+@keyframes fade-in-svg-reverse-loading {
+  0% {
+    fill: #000;
+    stroke:#fff;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+  }
+  50% {
+    fill: #fff;
+    stroke:#000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 500;
+    stroke-width: 2px;
+  }
+  100% {
+    fill: #000;
+    stroke:#fff;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  
+}

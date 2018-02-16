@@ -1,0 +1,5 @@
+application/models/*
+!application/models/.gitkeep
+application/controllers/*
+!application/controllers/.gitkeep
+!application/controllers/homeController.class.php

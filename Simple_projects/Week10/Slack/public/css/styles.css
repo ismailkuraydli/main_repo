@@ -1,0 +1,146 @@
+.border {
+    border: 1px solid #000;
+}
+.borderred {
+    border: 1px solid red;
+}
+html, {
+    height: 100%;
+}
+ body{
+     margin: 0;
+     padding: 0;
+ }
+#container {
+    min-height: 100%;
+    width: 100%;
+}
+#footer {
+    height: 150px;
+    
+}
+#input-container {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+ #sidebar{
+     background: #4d394b;
+     min-height: 930px;
+     margin-bottom: -100%;
+}
+.rooms{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 15pt;
+    height: 100px;
+    padding-top: 15px;
+}
+.sidebar-text {
+    height: 40px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 20pt;
+}
+.add-sign {
+    color: #fff;
+    opacity: 0.7;
+    height: 30px;
+    font-size: 30pt;
+    padding:0px 0px 10px 0px;
+}
+#sidebar-content {
+    height: 950px;;
+}
+#content {
+    height: 730px;
+    overflow: auto;
+}
+#nav {
+    height: 50px;
+    color: #000;
+    font-size: 15pt;
+    font-weight: bolder;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+div > a {
+    color: #000;
+    text-decoration: none;
+}
+div > a:hover,
+div > a:focus {
+    color: #000;
+    text-decoration: none;
+}
+.message-box {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: 20px;
+}
+#input-text-chat {
+    width: 85%;
+    background: none;
+    border: none;
+    resize: none;
+    height: 30%;
+    margin-top: 10px;
+    font-size: 10pt;
+    color: #000;
+}
+#input-text-chat:focus {
+    outline: 0;
+}
+#button-chat-send {
+    float: right;
+    height: 100%;
+    width: 12%;
+    background: none;
+    border: none;
+    margin-top: 0;
+}
+
+.input-login {
+    height: 50px;
+    width: 400px;
+}
+.input-label {
+    font-size: 20pt;
+}
+
+#button-login {
+    height: 50px;
+    width: 100%;
+    background: #d3c4d100;
+    border: 1px solid #4d394b;
+    border-radius: 15px;
+    font-size: 15pt;
+    margin: 20px 0;
+}
+#button-login:focus,
+#button-login:hover {
+    text-decoration: none;
+    outline: 0;
+}
+.large {
+    font-size: 30pt;
+    font-weight: bolder;
+}
+.button-group {
+    height: 200px;
+    width: 400px;
+}
+.time-stamp {
+    margin: 0 40%;
+    color: #000;
+    opacity: 0.8;
+
+}
+
+.user-name {
+    color: #000;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.message {
+    color: #000;
+    font-size: 13pt;
+}

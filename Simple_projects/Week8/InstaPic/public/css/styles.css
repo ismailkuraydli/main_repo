@@ -1,0 +1,132 @@
+.container {
+    height: 76px!important;
+}
+
+
+#logo-insta {
+    margin: 10px 0px;
+}
+
+.logo-box {
+    float: left;
+    height: 100%;
+    width: 50px;
+}
+
+.border-split {
+    float: left;
+    height:50px;
+    margin: 10px 0px;
+    border-right: 1px solid #000;
+}
+
+.search-field {
+    height: 50px;
+    margin: 10px 0px;
+
+}
+.nav-icons {
+    float: left;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.nav-insta {
+    margin: 0px 0px 20px 0px;
+    background: #FFF;
+}
+
+.insta-icon {
+    margin: 10px 0px;
+}
+
+.avatar {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.avatar-profile {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.user-name {
+    margin-top: 10px;
+    color: #000;
+}
+
+.post-image {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.post-div {
+    padding: 20px 30px 20px 10px;
+    background: #FFF;
+    margin: 30px 0px;
+    border: 1px solid grey;
+}
+
+.profile-div {
+    padding: 20px 30px 20px 10px;
+    background: none;
+    margin: 30px 0px;
+}
+.input-textarea {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-top: 1px solid #f5f5f5;
+}
+
+.input-textarea:focus {
+    outline: none;
+}
+
+.form-button {
+    background: none;
+    box-decoration-break: none;
+    border: none;
+}
+
+.profile-header {
+    border-bottom: 1px solid #fff;
+}
+
+.edit-profile {
+    border: 1p solid #fff;
+    color: #000;
+    padding: 13px 0px;
+}
+
+.input-file {
+    margin: 10px 0px;
+    border: 1px solid #f5f5f5;
+    height: 30px !important;
+}
+.input-label {
+    font-size: 20pt;
+}
+
+.form-button {
+    font-size: 20pt;
+}
+
+.input-textarea {
+    height: 50px !important;
+}
+
+.add-post {
+    font-size: 17pt;
+    margin: 17px 10px;
+    color: #000;
+}
+
+.chat-box {
+    margin: 20px 30px;
+    font-size: 15pt;
+}

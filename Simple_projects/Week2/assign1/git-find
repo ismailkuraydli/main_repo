@@ -1,0 +1,88 @@
+#!/usr/bin/php 
+<?php
+/**
+ * @author Ismail Kuraydli <ismailkuraydli@gmail.com>
+ * @link https://ismailkuraydli@bitbucket.org/ismailkuraydli/sef_86_ismail-kuraydli.git
+ * @version 1.2
+ * Note use symlink : 
+ * sudo ln -s /home/$USER/<script-location> /usr/local/bin/git-find
+ */
+function makeSearchString()
+{
+    /**
+     * @param user input params using getOpt()
+     * @return array with two strings used to facilitate the search
+     * array[0] includes the shell executable line for the search
+     * array[1] includes the first display line with the search params
+     */
+    $options = getOpt("a:e:t:d:s:m:");
+    $searchString = 'git log ';
+    $searchingResultsFor = 'Search results by ';
+    foreach ($options as $key => $value) {
+        switch ($key) {
+            case 'a':
+                $stringAddition = "--author {$value} ";
+                $searchingFor = "Author (\"{$value}\")";
+                break;
+            case 'e':
+                $stringAddition = "--author {$value} ";
+                $searchingFor = "Email (\"{$value}\")";
+                break;
+            case 'd':
+                $dayStart = "{$value} 00:00:00";
+                $dayEnd = "{$value} 24:59:59";
+                $stringAddition = "--after=\"{$dayStart}\" --before=\"{$dayEnd}\" ";
+                $searchingFor = "Day (\"{$value}\") ";
+                break;
+            case 't':
+                if (!array_key_exists('d',$options)) {
+                    $stringAddition = "--after=\"today {$value}:00\" --before=\"today {$value}:59\" ";
+                } else {
+                    $stringAddition = "--after=\"{$options['d']} {$value}:00\" --before=\"{$options['d']} {$value}:59\" ";
+                }            
+                $searchingFor = "Time (\"{$value}\") ";
+                break;
+            
+            case 's':
+                $stringAddition = "--after=\"{$value}\" --before=\"{$value}\" ";
+                $searchingFor = "Epoch Timestamp (\"{$value}\") ";
+                break;
+            case 'm':
+                $stringAddition = "--grep=\"{$value}\" ";
+                $searchingFor = "Commit Message (\"{$value}\") ";
+                break;
+        }
+        $searchString = "{$searchString}{$stringAddition}";
+        $searchingResultsFor = "{$searchingResultsFor}{$searchingFor}";
+    } 
+    if ($options == NULL) {
+        $searchingResultsFor = 'Displaying all log,';
+    }
+    $searchStringsArray = [$searchString, $searchingResultsFor];
+    return $searchStringsArray;
+}
+function formatQueries($searchStringsArray)
+{
+    /**
+     * @param array size two including at index 0 git log search string
+     * and [1] display string of what was searched
+     * @return display on shell results of search
+     */
+    $formatString = "{$searchStringsArray[0]} --pretty=format:':: %H%x20%x20-%an-%x20%x20%ad%x20\"%s\"' ";
+    $formatString = "{$formatString}| awk '{print NR $0}' ";
+    $startMessage = "{$searchStringsArray[1]} Total number of results: ";
+    $numberOfResults = shell_exec("{$formatString} | awk 'END {print NR}'");
+    $startMessage = "{$startMessage}{$numberOfResults}";
+    $resultsOfSearch = shell_exec($formatString);
+    echo "{$startMessage}\n{$resultsOfSearch}";
+}
+
+if (php_uname('s') === 'Linux') {
+    if (shell_exec('git rev-parse --is-inside-work-tree 2>/dev/null') == TRUE) {
+        formatQueries(makeSearchString());
+    } else {
+        echo "Please run script in a git repository.\n\n";
+    }    
+} else {
+    echo "This script is only for Linux based shell.\n\n";
+}
